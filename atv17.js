@@ -11,24 +11,21 @@ número total de eleitores.
 let total = 0;
 
 total = parseInt(
-  prompt("Digite a quantidade de eleitores de um municipio: ")
-);
-let quantidadedevotosbrancos = parseInt(prompt("Digite a quantidade de votos brancos : "));
-let quantidadedevotosnulos = parseInt(prompt("Digite a quantidade de votos nulos :"));
+  prompt("Digite a quantidade de eleitores de um municipio: "));
 
-let porcentagemvotosbrancos = (quantidadedevotosbrancos / total) * 100;
-let porcentagemvotosnulos = (quantidadedevotosnulos / total) * 100;
-let porcentagemvotosvalido = 100 - (porcentagemvotosnulos+porcentagemvotosbrancos);
+let votosBranco = parseInt(prompt("Digite a quantidade de votos brancos : "));
+let votosNulos = parseInt(prompt("Digite a quantidade de votos nulos :"));
 
-document.write(
-  "A porcentagem de votos em brancos corresponde a : ",
-  porcentagemvotosbrancos, '%'
-);
-document.write(
-  "</br> A porcentagem de votos nulos corresponde a : ",
-  porcentagemvotosnulos, '%'
-);
-document.write(
-  "</br> A porcentagem de votos validos corresponde a : ",
-  porcentagemvotosvalido, '%'
-);
+let votosValidos = (total - votosBranco) - votosNulos;
+
+if(votosBranco>total || votosNulos>total || votosNulos+votosBranco>total){
+  console.log('Algum valor está incorreto!')
+} else{
+  let parcBrancos = (votosBranco/total)*100;
+  let parcNulos = (votosNulos/total)*100;
+  let parcValidos = (100-(parcBrancos+parcNulos));
+}
+
+document.write('Total de votos brancos é de: ' +parcBrancos+ ' % .'+'<br/>');
+document.write('Total de votos nulos é de: ' +parcNulos+ ' % .'+'<br/>');
+document.write('Total de votos válidos é de: ' +parcValidos+ ' % .'+'<br/>');
