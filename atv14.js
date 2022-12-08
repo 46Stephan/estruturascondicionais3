@@ -5,10 +5,15 @@ enquanto a soma seja menor que 500 e no final mostre qual o
 */
 
 
-let num = parseInt(prompt('Digite um numero'));
-soma = 0
+let num = parseInt(prompt('Digite um numero: '));
+let numTotal = [];
+let soma = numBase * 3;
 
 while(soma < 500){
-    soma = soma + (num*3);
+    numTotal.push(soma);
+    soma++;
+
+
+    let = lastNum = numTotal.pop()
 }
-document.write(num);
+document.write(lastNum);
