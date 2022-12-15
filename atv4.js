@@ -2,7 +2,7 @@
 
 const dia = prompt('Informe o dia: \n [1] - Domingo \n [2] - Segunda \n [3] - Terça \n [4] - Quarta \n [5] - Quinta \n [6] - Sexta \n [7] - Sábado')
 
-switch(dia){
+switch (dia) {
     case '1':
         alert('Domingo')
         break;

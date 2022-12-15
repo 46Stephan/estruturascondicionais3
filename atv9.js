@@ -4,10 +4,10 @@
 let numero = prompt('Informe um número:');
 let divisor = 2;
 
-while(numero%divisor != 0){
+while (numero % divisor != 0) {
     divisor++;
 
-}if(numero==divisor){
+} if (numero == divisor) {
     document.write("Número é Primo!");
-}else
+} else
     document.write("Número NÃO é primo!");

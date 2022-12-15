@@ -9,7 +9,7 @@ let num = parseInt(prompt('Digite um numero: '));
 let numTotal = [];
 let soma = numBase * 3;
 
-while(soma < 500){
+while (soma < 500) {
     numTotal.push(soma);
     soma++;
 

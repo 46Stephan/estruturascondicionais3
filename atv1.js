@@ -4,8 +4,8 @@ motorista tenha idade maior ou igual a 18 anos imprime no console
 
 let idade = parseInt(prompt('Digite a sua idade: '));
 
-if(idade >= 18){
+if (idade >= 18) {
     document.write('Pode dirigir!');
-}else{
+} else {
     document.write('Não pode dirigir!');
 }

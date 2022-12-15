@@ -7,8 +7,8 @@ doar sangue ou não. Use alguns dos operadores lógicos OU (||) e E
 
 let idade = parseInt(prompt('Digite a sua idade: '));
 
-if(idade >= 18 && idade <= 67){
+if (idade >= 18 && idade <= 67) {
     alert('Você pode doar sangue!')
-}else{
+} else {
     alert('Você não pode doar sangue.')
 }

@@ -8,8 +8,8 @@ const anoAtual = 2022;
 let anoNascimento = parseInt(prompt('Informe o ano de nascimento:'));
 let idade = anoAtual - anoNascimento;
 
-if(idade >= 16){
+if (idade >= 16) {
     document.write('Podera votar esse ano!')
-}else{
+} else {
     document.write('Não poderá votar esse ano!')
 }

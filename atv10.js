@@ -9,12 +9,11 @@ const sexo = Number.parseInt(prompt("Informe o seu sexo: \n [1] Feminino \n [2} 
 const altura = Number.parseFloat(prompt("Informe a sua altura: "))
 let pesoIdeal = 0
 
-if (sexo === 1){
+if (sexo === 1) {
     pesoIdeal = (62.1 * altura) - 44.7
 
-}else if (sexo === 2){ 
+} else if (sexo === 2) {
     pesoIdeal = (72.7 * altura) - 58
 }
 
-document.write ("O seu peso ídeal é: " + pesoIdeal);
-    
+document.write("O seu peso ídeal é: " + pesoIdeal);

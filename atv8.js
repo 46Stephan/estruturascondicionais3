@@ -7,8 +7,8 @@ valor a essa variável. Crie a validação necessária:
 const salario = Number.parseFloat(prompt('Informe o seu salário'))
 const ir = 1903.98
 
-if (salario <= ir){
-alert ('Isento de IR')
+if (salario <= ir) {
+    alert('Isento de IR')
 } else {
-alert ('Triburado de IR')
+    alert('Triburado de IR')
 }

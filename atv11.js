@@ -6,7 +6,7 @@ conforme o caso. */
 
 const turno = prompt("Favor informar: \n [m] Para matutino \n [v] Para vespertino \n [n] para noturno")
 
-switch (turno){
+switch (turno) {
     case "m":
         mensagem = "Bom dia!";
         break;
@@ -14,7 +14,7 @@ switch (turno){
     case "v":
         mensagem = "Boa tarde!";
         break;
-    
+
     case "n":
         mensagem = "Boa noite!"
         break;

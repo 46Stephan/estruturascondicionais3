@@ -8,10 +8,10 @@ let idade = parseInt(prompt('Digite a sua idade: '));
 let carteira = confirm('Possui carteira de habilitação? Clique em OKAY para SIM - Clique em CANCELAR para NÃO ');
 
 
-if(idade >= 18 && carteira) {
+if (idade >= 18 && carteira) {
     document.write('Pode dirigir!');
-}else if(idade >= 18 && !carteira){
+} else if (idade >= 18 && !carteira) {
     document.write('Não pode dirigir!');
-}else{
+} else {
     document.write('Não pode dirigir!');
 }

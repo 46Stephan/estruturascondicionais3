@@ -1,4 +1,4 @@
-  /*
+/*
 Escreva um algoritmo que armazene o número total de eleitores de
 um município, o número de votos brancos, nulos e válidos. Calcular
 e escrever o percentual que cada um representa em relação ao
@@ -18,14 +18,14 @@ let votosNulos = parseInt(prompt("Digite a quantidade de votos nulos :"));
 
 let votosValidos = (total - votosBranco) - votosNulos;
 
-if(votosBranco>total || votosNulos>total || votosNulos+votosBranco>total){
+if (votosBranco > total || votosNulos > total || votosNulos + votosBranco > total) {
   console.log('Algum valor está incorreto!')
-} else{
-  let parcBrancos = (votosBranco/total)*100;
-  let parcNulos = (votosNulos/total)*100;
-  let parcValidos = (100-(parcBrancos+parcNulos));
+} else {
+  let parcBrancos = (votosBranco / total) * 100;
+  let parcNulos = (votosNulos / total) * 100;
+  let parcValidos = (100 - (parcBrancos + parcNulos));
 }
 
-document.write('Total de votos brancos é de: ' +parcBrancos+ ' % .'+'<br/>');
-document.write('Total de votos nulos é de: ' +parcNulos+ ' % .'+'<br/>');
-document.write('Total de votos válidos é de: ' +parcValidos+ ' % .'+'<br/>');
+document.write('Total de votos brancos é de: ' + parcBrancos + ' % .' + '<br/>');
+document.write('Total de votos nulos é de: ' + parcNulos + ' % .' + '<br/>');
+document.write('Total de votos válidos é de: ' + parcValidos + ' % .' + '<br/>');
